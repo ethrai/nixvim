@@ -27,7 +27,7 @@
           modified = " ";
           renamed = "󰑕";
           staged = "󰩍";
-          unstaged = "";
+          unstaged = " ";
           untracked = "";
         };
       };

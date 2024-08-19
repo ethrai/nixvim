@@ -6,7 +6,10 @@
     # completion
     ./plugins/cmp.nix
     ./plugins/autopairs.nix
+    ./plugins/supermaven.nix
+
     ./plugins/lsp.nix
+    ./plugins/lspsaga.nix
     ./plugins/luasnip.nix
     ./plugins/lspkind.nix
     # formatting/linting
@@ -16,6 +19,7 @@
     ./plugins/colorizer.nix
     ./plugins/indent-blankline.nix
     ./plugins/misc.nix
+    ./plugins/illuminate.nix
     # core
     ./keymaps.nix
     ./opts.nix
@@ -33,7 +37,6 @@
     # 💅
     ./plugins/lualine.nix
 
-    
   ];
 
 }

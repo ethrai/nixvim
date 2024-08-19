@@ -5,7 +5,9 @@
       enable = true;
       settings = {
         autoEnableSources = true;
-        experimental = { ghost_text = true; }; performance = { debounce = 60;
+        experimental = { ghost_text = true; };
+        performance = {
+          debounce = 60;
           fetchingTimeout = 200;
           maxViewEntries = 30;
         };

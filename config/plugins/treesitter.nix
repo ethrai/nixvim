@@ -50,8 +50,19 @@
     };
     swap = {
       enable = true;
-      swapNext = { "<leader>a" = "@parameters.inner"; };
-      swapPrevious = { "<leader>A" = "@parameter.outer"; };
+      swapNext = { "<leader>p" = "@parameters.inner"; };
+      swapPrevious = { "<leader>P" = "@parameter.outer"; };
+    };
+  };
+
+  plugins.treesitter-context = {
+    enable = true;
+    settings = {
+      enable = true;
+      line_numbers = true;
+      mode = "topline";
+      separator = "-";
+
     };
   };
 }

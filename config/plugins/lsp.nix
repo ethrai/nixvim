@@ -76,11 +76,11 @@
             action = "declaration";
             desc = "Goto Declaration";
           };
-          gI = {
+          gi = {
             action = "implementation";
             desc = "Goto Implementation";
           };
-          gT = {
+          gt = {
             action = "type_definition";
             desc = "Type Definition";
           };
@@ -91,10 +91,6 @@
           "<leader>cw" = {
             action = "workspace_symbol";
             desc = "Workspace Symbol";
-          };
-          "<F2>" = {
-            action = "rename";
-            desc = "Rename";
           };
         };
         diagnostic = {

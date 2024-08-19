@@ -1,10 +1,4 @@
 {
-  keymaps = [{
-    mode = "n";
-    key = "<leader>a";
-    action = "<cmd> Lspsaga code_action<CR>";
-  }];
-
   plugins.lspkind = {
     enable = true;
     cmp = {
