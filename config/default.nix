@@ -1,4 +1,39 @@
 {
   # Import all your configuration modules here
-  imports = [ ./bufferline.nix ];
+  imports = [
+    # catppuccin
+    ./plugins/theme.nix
+    # completion
+    ./plugins/cmp.nix
+    ./plugins/autopairs.nix
+    ./plugins/lsp.nix
+    ./plugins/luasnip.nix
+    ./plugins/lspkind.nix
+    # formatting/linting
+    ./plugins/none-ls.nix
+    # syntax
+    ./plugins/treesitter.nix
+    ./plugins/colorizer.nix
+    ./plugins/indent-blankline.nix
+    ./plugins/misc.nix
+    # core
+    ./keymaps.nix
+    ./opts.nix
+
+    # git
+    ./plugins/gitsigns.nix
+    ./plugins/lazygit.nix
+
+    # navigation
+    ./plugins/telescope.nix
+    ./plugins/oil.nix
+    ./plugins/neotree.nix
+    ./plugins/harpoon.nix
+
+    # 💅
+    ./plugins/lualine.nix
+
+    
+  ];
+
 }
