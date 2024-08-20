@@ -5,6 +5,7 @@
     cmp = {
       enable = true;
       settings = {
+        preselect = "cmp.PreselectMode.None";
         autoEnableSources = true;
         experimental = { ghost_text = true; };
         performance = {
