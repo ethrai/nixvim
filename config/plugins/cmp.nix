@@ -1,13 +1,12 @@
 {
-  opts.completeopt = [ "menu" "menuone" "noselect" ];
+  opts.completeopt = [ "noselect" ];
   plugins = {
-    cmp-emoji = { enable = true; };
     cmp = {
       enable = true;
 
       settings = {
-        completion.completeopt = "menu,menuone,noselect";
-        completion.autocomplete = false;
+        completion.completeopt = "noselect";
+        # completion.autocomplete = true;
         preselect = "cmp.PreselectMode.None";
         autoEnableSources = true;
         experimental = { ghost_text = true; };
@@ -52,7 +51,7 @@
           "<C-d>" = "cmp.mapping.scroll_docs(-4)";
           "<C-u>" = "cmp.mapping.scroll_docs(4)";
           "<C-Space>" = "cmp.mapping.complete()";
-          "<CR>" = "cmp.mapping.confirm({ select = true })";
+          "<CR>" = "cmp.mapping.confirm({ select = false })";
           "<S-CR>" =
             "cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true })";
 
@@ -81,11 +80,13 @@
         };
       };
     };
+
     cmp-nvim-lsp = { enable = true; }; # lsp
     cmp-buffer = { enable = true; };
     cmp-path = { enable = true; }; # file system paths
     cmp_luasnip = { enable = true; }; # snippets
     cmp-cmdline = { enable = false; }; # autocomplete for cmdline
+    cmp-nvim-lsp-signature-help.enable = true;
   };
   extraConfigLua = ''
         luasnip = require("luasnip")
