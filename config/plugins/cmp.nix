@@ -5,6 +5,7 @@
     cmp = {
       enable = true;
       settings = {
+        completion.completeopt = [ "menu" "menuone" "noinsert" "noselect" ];
         preselect = "cmp.PreselectMode.None";
         autoEnableSources = true;
         experimental = { ghost_text = true; };
