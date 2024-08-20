@@ -1,11 +1,13 @@
 {
-  opts.completeopt = [ "menu" "menuone" "noinsert" "noselect" ];
+  opts.completeopt = [ "menu" "menuone" "noselect" ];
   plugins = {
     cmp-emoji = { enable = true; };
     cmp = {
       enable = true;
+
       settings = {
-        completion.completeopt = [ "menu" "menuone" "noinsert" "noselect" ];
+        completion.completeopt = "menu,menuone,noselect";
+        completion.autocomplete = false;
         preselect = "cmp.PreselectMode.None";
         autoEnableSources = true;
         experimental = { ghost_text = true; };
