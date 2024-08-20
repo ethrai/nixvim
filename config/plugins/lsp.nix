@@ -9,7 +9,7 @@
       servers = {
         html = { enable = true; };
         lua-ls = { enable = true; };
-        nil-ls = { enable = true; };
+        nixd = { enable = true; };
         marksman = { enable = true; };
         pyright = { enable = true; };
         gopls = { enable = true; };

@@ -55,15 +55,4 @@
     };
   };
 
-  plugins.treesitter-context = {
-    enable = true;
-    settings = {
-      enable = true;
-      line_numbers = true;
-      mode = "cursor";
-      max_lines = 3;
-      separator = "-";
-
-    };
-  };
 }
