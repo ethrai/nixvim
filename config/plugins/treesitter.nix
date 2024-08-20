@@ -60,7 +60,8 @@
     settings = {
       enable = true;
       line_numbers = true;
-      mode = "topline";
+      mode = "cursor";
+      max_lines = 3;
       separator = "-";
 
     };
