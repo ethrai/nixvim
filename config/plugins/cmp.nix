@@ -1,4 +1,5 @@
 {
+  opts.completeopt = [ "menu" "menuone" "noinsert" "noselect" ];
   plugins = {
     cmp-emoji = { enable = true; };
     cmp = {
@@ -14,6 +15,10 @@
         snippet = { expand = "luasnip"; };
         formatting = { fields = [ "kind" "abbr" "menu" ]; };
         sources = [
+          {
+            name = "luasnip"; # snippets
+            keywordLength = 3;
+          }
           { name = "git"; }
           { name = "nvim_lsp"; }
           { name = "emoji"; }
@@ -24,10 +29,6 @@
           }
           {
             name = "path"; # file system paths
-            keywordLength = 3;
-          }
-          {
-            name = "luasnip"; # snippets
             keywordLength = 3;
           }
         ];
