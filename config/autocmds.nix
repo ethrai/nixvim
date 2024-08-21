@@ -4,9 +4,24 @@
     vim_enter = { };
     indentscope = { };
     restore_cursor = { };
+    restore_session = { };
   };
 
   autoCmd = [
+    {
+      group = "restore_session";
+      event = [ "VimEnter" ];
+      pattern = "*";
+      nested = true;
+      callback = {
+        __raw = ''
+          function()
+            require('persistence').load()
+          end
+        '';
+      };
+
+    }
     {
       group = "highlight_yank";
       event = [ "TextYankPost" ];
