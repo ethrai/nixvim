@@ -19,24 +19,6 @@
         '';
       };
     }
-    {
-      group = "vim_enter";
-      event = [ "VimEnter" ];
-      pattern = "*";
-      callback = {
-        __raw = ''
-          function()
-            vim.cmd('Startup')
-          end
-        '';
-      };
-    }
-    {
-      group = "indentscope";
-      event = [ "FileType" ];
-      pattern =
-        [ "help" "Startup" "startup" "neo-tree" "Trouble" "trouble" "notify" ];
-    }
     ## from NVChad https://nvchad.com/docs/recipes (this autocmd will restore the cursor position when opening a file)
     {
       group = "restore_cursor";
