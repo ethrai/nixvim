@@ -17,12 +17,12 @@
       };
     }
     {
-      mode = [ "n" "v" ];
+      mode = [ "n" ];
       key = "L";
       action = "$";
     }
     {
-      mode = [ "n" "v" ];
+      mode = [ "n" ];
       key = "H";
       action = "^";
     }

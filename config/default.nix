@@ -23,6 +23,8 @@
     # core
     ./keymaps.nix
     ./opts.nix
+    ./misc.nix
+    ./autocmds.nix
 
     # git
     ./plugins/gitsigns.nix

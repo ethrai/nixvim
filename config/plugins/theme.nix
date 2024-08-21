@@ -31,10 +31,6 @@
             enabled = true;
             lsp = true;
           };
-          navic = {
-            enabled = true;
-            custom_bg = "NONE";
-          };
           treesitter = true;
           telescope.enabled = true;
           nvim_surround = true;
