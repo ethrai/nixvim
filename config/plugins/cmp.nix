@@ -24,7 +24,6 @@
           }
           { name = "git"; }
           { name = "nvim_lsp"; }
-          { name = "emoji"; }
           {
             name = "buffer"; # text within current buffer
             option.get_bufnrs.__raw = "vim.api.nvim_list_bufs";
@@ -57,9 +56,7 @@
 
           "<Tab>" = ''
             cmp.mapping(function(fallback)
-                  if cmp.visible() then
-                    cmp.select_next_item()
-                  elseif require("luasnip").locally_jumpable(1) then
+                  if require("luasnip").locally_jumpable(1) then
                     require("luasnip").jump(1)
                   else
                     fallback()
@@ -68,9 +65,7 @@
           '';
           "<S-Tab>" = ''
             cmp.mapping(function(fallback)
-                  if cmp.visible() then
-                    cmp.select_prev_item()
-                  elseif require("luasnip").jumpable(-1) then
+                 if require("luasnip").jumpable(-1) then
                     require("luasnip").jump(-1)
                   else
                     fallback()
