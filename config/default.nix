@@ -1,6 +1,10 @@
 {
   # Import all your configuration modules here
   imports = [
+    # core
+    ./keymaps.nix
+    ./opts.nix
+    ./autocmds.nix
     # catppuccin
     ./plugins/theme.nix
     # completion
@@ -20,11 +24,6 @@
     ./plugins/indent-blankline.nix
     ./plugins/misc.nix
     ./plugins/illuminate.nix
-    # core
-    ./keymaps.nix
-    ./opts.nix
-    ./misc.nix
-    ./autocmds.nix
 
     # git
     ./plugins/gitsigns.nix
