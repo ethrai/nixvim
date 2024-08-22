@@ -5,6 +5,7 @@
       enable = true;
 
       settings = {
+        snippet = { expand = "luasnip"; };
         completion.completeopt = "noselect";
         # completion.autocomplete = true;
         preselect = "cmp.PreselectMode.None";
@@ -15,9 +16,16 @@
           fetchingTimeout = 200;
           maxViewEntries = 30;
         };
-        snippet = { expand = "luasnip"; };
         formatting = { fields = [ "kind" "abbr" "menu" ]; };
         sources = [
+          {
+            name = "path"; # file system paths
+            keywordLength = 3;
+          }
+          { name = "nvim_lsp"; }
+          { name = "nvim_lsp_document_symbol"; }
+          { name = "nvim_lsp_signature_help"; }
+          { name = "tmux"; }
           {
             name = "luasnip"; # snippets
             keywordLength = 3;
@@ -27,10 +35,6 @@
           {
             name = "buffer"; # text within current buffer
             option.get_bufnrs.__raw = "vim.api.nvim_list_bufs";
-            keywordLength = 3;
-          }
-          {
-            name = "path"; # file system paths
             keywordLength = 3;
           }
         ];
@@ -76,10 +80,14 @@
       };
     };
 
-    cmp-nvim-lsp = { enable = true; }; # lsp
-    cmp-buffer = { enable = true; };
-    cmp-path = { enable = true; }; # file system paths
-    cmp_luasnip = { enable = true; }; # snippets
+    cmp-nvim-lsp.enable = true; # lsp
+    cmp-buffer.enable = true;
+    cmp-path.enable = true; # file system paths
+    cmp_luasnip.enable = true; # snippets
+
+    cmp-nvim-lsp-document-symbol.enable = true;
+    cmp-nvim-lsp-signature-help.enable = true;
+    cmp-nvim-lua.enable = true;
   };
   extraConfigLua = ''
         luasnip = require("luasnip")

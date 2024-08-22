@@ -35,7 +35,7 @@
     ./plugins/neotree.nix
     ./plugins/harpoon.nix
 
-    ./plugins/persistence.nix
+    ./plugins/auto-session.nix
 
     # 💅
     ./plugins/lualine.nix
