@@ -23,7 +23,6 @@
             keywordLength = 3;
           }
           { name = "nvim_lsp"; }
-          { name = "nvim_lsp_document_symbol"; }
           { name = "nvim_lsp_signature_help"; }
           { name = "tmux"; }
           {
@@ -31,7 +30,6 @@
             keywordLength = 3;
           }
           { name = "git"; }
-          { name = "nvim_lsp"; }
           {
             name = "buffer"; # text within current buffer
             option.get_bufnrs.__raw = "vim.api.nvim_list_bufs";
@@ -85,7 +83,6 @@
     cmp-path.enable = true; # file system paths
     cmp_luasnip.enable = true; # snippets
 
-    cmp-nvim-lsp-document-symbol.enable = true;
     cmp-nvim-lsp-signature-help.enable = true;
     cmp-nvim-lua.enable = true;
   };
