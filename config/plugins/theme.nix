@@ -8,10 +8,9 @@
           dark = "mocha";
         };
         custom_highlights = ''
-          function(highlights)
+          function(colors)
             return {
-            CursorLineNr = { fg = highlights.peach, style = {} },
-            NavicText = { fg = highlights.text },
+              CmpBorder = { fg = colors.blue },
             }
           end
         '';
@@ -22,6 +21,8 @@
         no_underline = false;
         transparent_background = true;
         integrations = {
+          leap = true;
+          lsp_saga = true;
           cmp = true;
           gitsigns = true;
           neotree = true;
@@ -41,7 +42,7 @@
           };
           native_lsp = {
             enabled = true;
-            inlay_hints = { background = true; };
+            inlay_hints = { background = false; };
             underlines = {
               errors = [ "underline" ];
               hints = [ "underline" ];

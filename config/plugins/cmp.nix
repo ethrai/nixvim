@@ -18,28 +18,19 @@
         };
         formatting = { fields = [ "kind" "abbr" "menu" ]; };
         sources = [
-          {
-            name = "path"; # file system paths
-            keywordLength = 3;
-          }
           { name = "nvim_lsp"; }
-          { name = "nvim_lsp_signature_help"; }
-          { name = "tmux"; }
-          {
-            name = "luasnip"; # snippets
-            keywordLength = 3;
-          }
+          { name = "luasnip"; }
+          { name = "path"; }
           { name = "git"; }
-          {
-            name = "buffer"; # text within current buffer
-            option.get_bufnrs.__raw = "vim.api.nvim_list_bufs";
-            keywordLength = 3;
-          }
+          { name = "buffer"; }
         ];
 
         window = {
-          completion = { border = "solid"; };
-          documentation = { border = "solid"; };
+          completion = {
+            border = "rounded";
+            winhighlight = "FloatBorder:CmpBorder";
+          };
+          documentation = { border = "rounded"; };
         };
 
         mapping = {
