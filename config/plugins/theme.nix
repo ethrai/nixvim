@@ -22,6 +22,8 @@
         transparent_background = true;
         integrations = {
           leap = true;
+          noice = true;
+          notify = true;
           lsp_saga = true;
           cmp = true;
           gitsigns = true;

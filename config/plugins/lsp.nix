@@ -4,6 +4,9 @@
     lsp-format = { enable = true; };
     helm = { enable = true; };
     lsp = {
+      capabilities = ''
+        capabilities.textDocument.completion.completionItem.snippetSupport = true
+      '';
       enable = true;
       inlayHints = true;
       servers = {

@@ -1,4 +1,9 @@
 { pkgs, ... }: {
+  keymaps = [{
+    mode = [ "n" ];
+    key = "<leader>st]";
+    action = "<cmd>SupermavenToggle<cr>";
+  }];
   extraPlugins = with pkgs.vimPlugins; [{ plugin = supermaven-nvim; }];
   extraConfigLua = ''
     require("supermaven-nvim").setup {

@@ -30,15 +30,17 @@
     ./plugins/lazygit.nix
 
     # navigation
+    ./plugins/harpoon.nix
     ./plugins/telescope.nix
     ./plugins/oil.nix
     ./plugins/neotree.nix
-    ./plugins/harpoon.nix
 
     ./plugins/auto-session.nix
 
     # 💅
     ./plugins/lualine.nix
+    ./plugins/noice.nix
+    ./plugins/notify.nix
 
   ];
 
