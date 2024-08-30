@@ -5,7 +5,7 @@
     render = "minimal";
     timeout = 1000;
     topDown = false;
-    stages = "fade";
+    stages = "static";
   };
 
   keymaps = [
@@ -27,6 +27,9 @@
   ];
   extraConfigLua = ''
     local notify = require("notify")
+    notify.setup({
+      background_colour = "#000000",
+    })
 
     local filtered_message = { "No information available" }
 

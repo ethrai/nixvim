@@ -18,10 +18,8 @@
       };
     };
     keymaps = {
-      "<leader><space>" = {
-        action = "find_files";
-        options = { desc = "Find project files"; };
-      };
+      "<leader><space>" = { action = "find_files"; };
+      "<leader>n" = { action = "file_browser"; };
       "<leader>/" = {
         action = "live_grep";
         options = { desc = "Grep (root dir)"; };

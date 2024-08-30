@@ -33,9 +33,10 @@
     ./plugins/harpoon.nix
     ./plugins/telescope.nix
     ./plugins/oil.nix
-    ./plugins/neotree.nix
+    # ./plugins/neotree.nix
 
     ./plugins/auto-session.nix
+    # ./plugins/obsession.nix
 
     # 💅
     ./plugins/lualine.nix
