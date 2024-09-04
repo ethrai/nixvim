@@ -21,6 +21,7 @@
       golines.enable = true;
       nixfmt.enable = true;
       shfmt.enable = true;
+      asmfmt.enable = true;
     };
 
   };
