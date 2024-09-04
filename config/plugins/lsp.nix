@@ -17,6 +17,7 @@
         pyright = { enable = true; };
         gopls = { enable = true; };
         clangd = { enable = true; };
+        cmake = { enable = true; };
         terraformls = { enable = true; };
         tsserver = { enable = true; };
         ansiblels = { enable = true; };
