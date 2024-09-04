@@ -44,6 +44,10 @@
         action = "command_history";
         options = { desc = "Command History"; };
       };
+      "gr" = {
+        action = "lsp_references";
+        options = { desc = "Command History"; };
+      };
       "<leader>b" = {
         action = "buffers";
         options = { desc = "+buffer"; };
