@@ -38,6 +38,8 @@
     ./plugins/auto-session.nix
     # ./plugins/obsession.nix
 
+    ./plugins/obsidian.nix
+
     # 💅
     ./plugins/lualine.nix
     ./plugins/noice.nix
