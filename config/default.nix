@@ -44,6 +44,7 @@
     ./plugins/lualine.nix
     ./plugins/noice.nix
     ./plugins/notify.nix
+    ./plugins/headlines.nix
 
   ];
 
