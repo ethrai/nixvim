@@ -4,7 +4,7 @@
       enable = true;
       settings = {
         background = {
-          light = "macchiato";
+          light = "latte";
           dark = "mocha";
         };
         custom_highlights = ''
