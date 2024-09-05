@@ -14,6 +14,7 @@
             }
           end
         '';
+        flavour = "latte";
         term_colors = true;
         no_bold = false;
         no_italic = false;
