@@ -1,6 +1,8 @@
 {
+
   config = {
 
+    performance.byteCompileLua.enable = true;
     diagnostics = {
       virtual_lines = false;
       virtual_text = false;
