@@ -12,7 +12,7 @@
     # completion
     ./plugins/cmp.nix
     ./plugins/autopairs.nix
-    # ./plugins/supermaven.nix
+    ./plugins/supermaven.nix
 
     ./plugins/lsp.nix
     ./plugins/luasnip.nix

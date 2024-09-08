@@ -91,6 +91,7 @@
             action = "workspace_symbol";
             desc = "Workspace Symbol";
           };
+          "<F2>" = { action = "rename"; };
         };
         diagnostic = {
           "<leader>cd" = {
@@ -117,18 +118,11 @@
     lightbulb = { enable = false; };
     beacon.enable = false;
   };
-  keymaps = [
-    {
-      mode = "n";
-      key = "<leader>a";
-      action = "<cmd> Lspsaga code_action<CR>";
-    }
-    {
-      mode = "n";
-      key = "<F2>";
-      action = "<cmd> Lspsaga rename<CR>";
-    }
-  ];
+  keymaps = [{
+    mode = "n";
+    key = "<leader>a";
+    action = "<cmd> Lspsaga code_action<CR>";
+  }];
 
   extraConfigLua = ''
     local _border = "rounded"
