@@ -4,7 +4,7 @@
     fps = 60;
     render = "minimal";
     timeout = 3000;
-    topDown = false;
+    topDown = true;
     stages = "static";
   };
 
