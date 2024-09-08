@@ -1,6 +1,9 @@
 {
   # Import all your configuration modules here
   imports = [
+    # devel
+    ./plugins/nix.nix
+    ./plugins/web.nix
     # core
     ./keymaps.nix
     ./opts.nix
@@ -10,14 +13,14 @@
     # completion
     ./plugins/cmp.nix
     ./plugins/autopairs.nix
-    ./plugins/supermaven.nix
+    # ./plugins/supermaven.nix
 
     ./plugins/lsp.nix
-    ./plugins/lspsaga.nix
     ./plugins/luasnip.nix
     ./plugins/lspkind.nix
     # formatting/linting
     ./plugins/none-ls.nix
+    ./plugins/align.nix
     # syntax
     ./plugins/treesitter.nix
     ./plugins/colorizer.nix
@@ -32,7 +35,7 @@
     # navigation
     ./plugins/harpoon.nix
     ./plugins/telescope.nix
-    ./plugins/oil.nix
+    # ./plugins/oil.nix
     # ./plugins/neotree.nix
 
     ./plugins/auto-session.nix

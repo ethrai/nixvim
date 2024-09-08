@@ -12,9 +12,7 @@
       servers = {
         html = { enable = true; };
         lua-ls = { enable = true; };
-        nixd = { enable = true; };
         marksman = { enable = true; };
-        pyright = { enable = true; };
         gopls = { enable = true; };
         clangd = { enable = true; };
         cmake = { enable = true; };
@@ -111,7 +109,26 @@
       };
     };
   };
-  extraPlugins = with pkgs.vimPlugins; [ ansible-vim ];
+
+  plugins.lspsaga = {
+    enable = true;
+    implement.enable = false;
+    symbolInWinbar.enable = true;
+    lightbulb = { enable = false; };
+    beacon.enable = false;
+  };
+  keymaps = [
+    {
+      mode = "n";
+      key = "<leader>a";
+      action = "<cmd> Lspsaga code_action<CR>";
+    }
+    {
+      mode = "n";
+      key = "<F2>";
+      action = "<cmd> Lspsaga rename<CR>";
+    }
+  ];
 
   extraConfigLua = ''
     local _border = "rounded"
@@ -136,4 +153,5 @@
       border = _border
     }
   '';
+
 }

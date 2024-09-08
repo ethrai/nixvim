@@ -15,6 +15,15 @@
     };
     settings = {
       defaults = {
+        file_ignore_patterns = [
+          "^.git/"
+          "^.mypy_cache/"
+          "^__pycache__/"
+          "^output/"
+          "^data/"
+          "%.ipynb"
+          "^secrets/"
+        ];
         layout_config = {
           horizontal = {
             prompt_position = "top";
@@ -94,42 +103,4 @@
       };
     };
   };
-  keymaps = [
-    {
-      mode = "n";
-      key = "<leader>sd";
-      action = "<cmd>Telescope diagnostics bufnr=0<cr>";
-      options = { desc = "Document diagnostics"; };
-    }
-    {
-      key = "<leader>fe";
-      mode = "n";
-      action = "<cmd>Telescope file_browser<cr>";
-      options = { desc = "File browser"; };
-    }
-    {
-      mode = "n";
-      key = "<leader>fE";
-      action = "<cmd>Telescope file_browser path=%:p:h select_buffer=true<cr>";
-      options = { desc = "File browser"; };
-    }
-  ];
-  extraConfigLua = ''
-    local conf = require("telescope.config").values
-    local function toggle_telescope(harpoon_files)
-        local file_paths = {}
-        for _, item in ipairs(harpoon_files.items) do
-            table.insert(file_paths, item.value)
-        end
-
-        require("telescope.pickers").new({}, {
-            prompt_title = "Harpoon",
-            finder = require("telescope.finders").new_table({
-                results = file_paths,
-            }),
-            previewer = conf.file_previewer({}),
-            sorter = conf.generic_sorter({}),
-        }):find()
-    end
-  '';
 }

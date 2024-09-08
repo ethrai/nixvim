@@ -8,6 +8,12 @@
       virtual_text = false;
       underline = true;
       signs = true;
+      severity_sort = true;
+      float = {
+        border = "rounded";
+        source = "always";
+        focusable = false;
+      };
     };
 
     extraConfigLuaPre = ''
@@ -70,9 +76,9 @@
       colorcolumn = "80"; # Columns to highlight
       laststatus = 3; # When to use a status line for the last window
       fileencoding = "utf-8"; # File-content encoding for the current buffer
-      foldenable = false;
+      foldenable = true;
       linebreak = true;
-      foldmethod = "manual";
+      foldmethod = "indent";
       termguicolors = true; # Enables 24-bit RGB color in the |TUI|
       spell = false; # Highlight spelling mistakes (local to window)
       wrap = false; # Prevent text from wrapping
@@ -88,7 +94,7 @@
       tabstop = 2; # Number of spaces that a <Tab> in the file counts for
 
       textwidth =
-        0; # Maximum width of text that is being inserted.  A longer line will be
+        80; # Maximum width of text that is being inserted.  A longer line will be
       #   broken after white space to get this width.
 
       # Folding

@@ -1,16 +1,11 @@
 {
-  opts.completeopt = [ "noselect" ];
   plugins = {
     cmp = {
       enable = true;
-
       settings = {
         snippet = { expand = "luasnip"; };
-        completion.completeopt = "noselect";
-        # completion.autocomplete = true;
-        preselect = "cmp.PreselectMode.None";
         autoEnableSources = true;
-        experimental = { ghost_text = true; };
+        experimental = { ghost_text = false; };
         performance = {
           debounce = 60;
           fetchingTimeout = 200;
@@ -18,9 +13,12 @@
         };
         formatting = { fields = [ "kind" "abbr" "menu" ]; };
         sources = [
-          { name = "nvim_lsp"; }
+          { name = "async_path"; }
+          {
+            name = "nvim_lsp";
+            keyword_lenght = 3;
+          }
           { name = "luasnip"; }
-          { name = "path"; }
           { name = "git"; }
           { name = "buffer"; }
         ];
@@ -28,11 +26,14 @@
         window = {
           completion = {
             border = "rounded";
-            winhighlight = "FloatBorder:CmpBorder";
+            winhighlight = "floatborder:cmpborder";
+            scrollbar = false;
           };
+
           documentation = {
             border = "rounded";
-            winhighlight = "FloatBorder:CmpBorder";
+            winhighlight = "floatborder:cmpborder";
+            scrollbar = false;
           };
         };
 
@@ -43,6 +44,7 @@
           "<C-n>" = "cmp.mapping.select_next_item()";
           "<C-p>" = "cmp.mapping.select_prev_item()";
           "<C-e>" = "cmp.mapping.abort()";
+
           "<C-d>" = "cmp.mapping.scroll_docs(-4)";
           "<C-u>" = "cmp.mapping.scroll_docs(4)";
           "<C-Space>" = "cmp.mapping.complete()";
@@ -50,7 +52,7 @@
           "<S-CR>" =
             "cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true })";
 
-          "<Tab>" = ''
+          "<C-l>" = ''
             cmp.mapping(function(fallback)
                   if require("luasnip").locally_jumpable(1) then
                     require("luasnip").jump(1)
@@ -59,7 +61,7 @@
                   end
                 end, { "i", "s" })
           '';
-          "<S-Tab>" = ''
+          "<C-h>" = ''
             cmp.mapping(function(fallback)
                  if require("luasnip").jumpable(-1) then
                     require("luasnip").jump(-1)
@@ -73,12 +75,15 @@
     };
 
     cmp-nvim-lsp.enable = true; # lsp
+    cmp-nvim-lua.enable = true;
     cmp-buffer.enable = true;
-    cmp-path.enable = true; # file system paths
+    cmp-async-path.enable = true;
+    cmp-cmdline.enable = true;
     cmp_luasnip.enable = true; # snippets
 
     cmp-nvim-lsp-signature-help.enable = true;
-    cmp-nvim-lua.enable = true;
+
+    luasnip = { enable = true; };
   };
   extraConfigLua = ''
     luasnip = require("luasnip")
@@ -109,6 +114,5 @@
       Operator = " ",
       TypeParameter = " ",
     }
-
   '';
 }
