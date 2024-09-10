@@ -92,8 +92,6 @@
       foldmethod = "indent";
       foldlevel =
         99; # Folds with a level higher than this number will be closed
-      foldcolumn = "1";
-      foldlevelstart = 99;
     };
   };
 }
