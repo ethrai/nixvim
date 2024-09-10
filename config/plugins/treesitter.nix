@@ -1,4 +1,5 @@
 { pkgs, ... }: {
+  extraPlugins = with pkgs.vimPlugins; [ nvim-treesitter-textsubjects ];
   plugins.treesitter = {
     enable = true;
     settings = {
@@ -18,12 +19,12 @@
       keymaps = {
         "aa" = "@parameter.outer";
         "ia" = "@parameter.inner";
+        "ii" = "@conditional.inner";
+        "ai" = "@conditional.outer";
         "af" = "@function.outer";
         "if" = "@function.inner";
         "ac" = "@class.outer";
         "ic" = "@class.inner";
-        "ii" = "@conditional.inner";
-        "ai" = "@conditional.outer";
         "il" = "@loop.inner";
         "al" = "@loop.outer";
         "at" = "@comment.outer";

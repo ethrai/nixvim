@@ -8,7 +8,7 @@
     ./opts.nix
     ./autocmds.nix
     # catppuccin
-    ./plugins/theme.nix
+    ./plugins/catppuccin.nix
     # completion
     ./plugins/cmp.nix
     ./plugins/autopairs.nix
@@ -35,7 +35,6 @@
     ./plugins/harpoon.nix
     ./plugins/telescope.nix
     # ./plugins/oil.nix
-    # ./plugins/neotree.nix
 
     ./plugins/auto-session.nix
     # ./plugins/obsession.nix

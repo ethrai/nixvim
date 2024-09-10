@@ -1,5 +1,4 @@
 {
-
   config = {
 
     performance.byteCompileLua.enable = true;
@@ -20,20 +19,14 @@
       vim.diagnostic.config({
           signs = {
               text = {
-                  [vim.diagnostic.severity.ERROR] = " ",
-                  [vim.diagnostic.severity.WARN] = " ",
-                  [vim.diagnostic.severity.INFO] = " ",
-                  [vim.diagnostic.severity.HINT] = " ",
+                  [vim.diagnostic.severity.ERROR] = "",
+                  [vim.diagnostic.severity.WARN] = "",
+                  [vim.diagnostic.severity.INFO] = "",
+                  [vim.diagnostic.severity.HINT] = "",
               },
           }
       })
     '';
-    globals = {
-      # Disable useless providers
-      loaded_ruby_provider = 0; # Ruby
-      loaded_perl_provider = 0; # Perl
-      loaded_python_provider = 0; # Python 2
-    };
 
     clipboard = {
       # Use system clipboard
@@ -51,7 +44,7 @@
       hidden = true; # Keep closed buffer open in the background
       mouse = "a"; # Enable mouse control
       mousemodel = "extend"; # Mouse right-click extends the current selection
-      conceallevel = 2; # Hide * and # markers when scrolling
+      conceallevel = 1; # Hide * and # markers when scrolling
       splitbelow = true; # A new window is put below the current one
       splitright = true; # A new window is put right of the current one
 
@@ -69,16 +62,14 @@
       smartcase =
         true; # Override the 'ignorecase' option if the search pattern contains upper
       #   case characters
-      scrolloff = 8; # Number of screen lines to show around the cursor
+      scrolloff = 3; # Number of screen lines to show around the cursor
       cursorline = false; # Highlight the screen line of the cursor
       cursorcolumn = false; # Highlight the screen column of the cursor
       signcolumn = "yes"; # Whether to show the signcolumn
       colorcolumn = "80"; # Columns to highlight
       laststatus = 3; # When to use a status line for the last window
       fileencoding = "utf-8"; # File-content encoding for the current buffer
-      foldenable = true;
       linebreak = true;
-      foldmethod = "indent";
       termguicolors = true; # Enables 24-bit RGB color in the |TUI|
       spell = false; # Highlight spelling mistakes (local to window)
       wrap = false; # Prevent text from wrapping
@@ -86,7 +77,6 @@
       # Tab options
       expandtab =
         true; # Expand <Tab> to spaces in Insert mode (local to buffer)
-      autoindent = true; # Do clever autoindenting
       # cindent = true; # Enable C-style indentation
       smarttab = true; # Insert appropriate number of spaces on tab
       smartindent = true; # Smart autoindenting on new lines
@@ -98,8 +88,12 @@
       #   broken after white space to get this width.
 
       # Folding
+      foldenable = true;
+      foldmethod = "indent";
       foldlevel =
         99; # Folds with a level higher than this number will be closed
+      foldcolumn = "1";
+      foldlevelstart = 99;
     };
   };
 }

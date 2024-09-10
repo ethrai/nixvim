@@ -1,12 +1,7 @@
 { pkgs, ... }: {
   plugins.lualine = {
     enable = true;
-
     globalstatus = true;
-
-    # +-------------------------------------------------+
-    # | A | B | C                             X | Y | Z |
-    # +-------------------------------------------------+
     sections = {
       lualine_a = [ "mode" ];
       lualine_b = [ "branch" ];
@@ -16,9 +11,9 @@
           name = "diff";
           extraConfig = {
             symbols = {
-              added = " ";
-              modified = " ";
-              removed = " ";
+              added = " ";
+              modified = " ";
+              removed = " ";
             };
           };
         }
