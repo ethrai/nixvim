@@ -5,7 +5,7 @@
       settings = {
         background = {
           light = "latte";
-          dark = "mocha";
+          dark = "macchiato";
         };
         custom_highlights = ''
           function(colors)
@@ -14,7 +14,7 @@
             }
           end
         '';
-        flavour = "mocha";
+        flavour = "macchiato";
         term_colors = true;
         no_bold = false;
         no_italic = false;
