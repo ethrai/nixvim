@@ -8,8 +8,7 @@
     ./keymaps.nix
     ./opts.nix
     ./autocmds.nix
-    # catppuccin
-    ./plugins/catppuccin.nix
+    ./plugins/tokyonight.nix
     # completion
     ./plugins/cmp.nix
     ./plugins/autopairs.nix
