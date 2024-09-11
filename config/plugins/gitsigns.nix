@@ -4,9 +4,9 @@
     settings = {
       current_line_blame = true;
       signs = {
-        add = { text = ""; };
+        add = { text = ""; };
         change = { text = ""; };
-        delete = { text = ""; };
+        delete = { text = ""; };
         untracked = { text = ""; };
         topdelete = { text = "󰐊"; };
         changedelete = { text = "▎"; };

@@ -3,6 +3,7 @@
   imports = [
     # devel
     ./plugins/nix.nix
+    ./plugins/image.nix
     # core
     ./keymaps.nix
     ./opts.nix

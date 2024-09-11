@@ -11,9 +11,9 @@
           name = "diff";
           extraConfig = {
             symbols = {
-              added = " ";
+              added = " ";
               modified = " ";
-              removed = " ";
+              removed = " ";
             };
           };
         }
