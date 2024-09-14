@@ -35,7 +35,7 @@
     # navigation
     ./plugins/harpoon.nix
     ./plugins/telescope.nix
-    # ./plugins/oil.nix
+    ./plugins/oil.nix
 
     ./plugins/auto-session.nix
     # ./plugins/obsession.nix
