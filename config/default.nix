@@ -7,7 +7,8 @@
     ./keymaps.nix
     ./opts.nix
     ./autocmds.nix
-    ./plugins/kanagawa.nix
+    # ./plugins/kanagawa.nix
+    ./plugins/catppuccin.nix
     # completion
     ./plugins/cmp.nix
     ./plugins/autopairs.nix

@@ -23,20 +23,6 @@
           { name = "buffer"; }
         ];
 
-        window = {
-          completion = {
-            border = "rounded";
-            winhighlight = "floatborder:cmpborder";
-            scrollbar = false;
-          };
-
-          documentation = {
-            border = "rounded";
-            winhighlight = "floatborder:cmpborder";
-            scrollbar = false;
-          };
-        };
-
         mapping = {
           "<C-Tab>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
           "<C-j>" = "cmp.mapping.select_next_item()";
