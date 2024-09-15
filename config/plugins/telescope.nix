@@ -9,6 +9,8 @@
             file_browser = true;
             folder_browser = false;
           };
+          hijack_netrw = true;
+          use_fd = true;
         };
       };
       fzf-native = { enable = true; };

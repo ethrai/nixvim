@@ -1,21 +1,20 @@
 { pkgs, ... }: {
   plugins.lualine = {
     enable = true;
-    globalstatus = true;
-    sections = {
+    settings.globalstatus = true;
+    settings.sections = {
       lualine_a = [ "mode" ];
       lualine_b = [ "branch" ];
       lualine_c = [
         "harpoon2"
+        "filename"
         {
           name = "diff";
-          extraConfig = {
-            symbols = {
-              added = " ";
-              modified = " ";
-              removed = " ";
-            };
-          };
+          # symbols = {
+          #   added = " ";
+          #   modified = " ";
+          #   removed = " ";
+          # };
         }
       ];
 

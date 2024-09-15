@@ -1,32 +1,28 @@
 {
   # Import all your configuration modules here
   imports = [
-    # devel
+    # code
     ./plugins/nix.nix
-    ./plugins/image.nix
     # core
     ./keymaps.nix
     ./opts.nix
     ./autocmds.nix
-    # ./plugins/tokyonight.nix
-    ./plugins/catppuccin.nix
+    ./plugins/kanagawa.nix
     # completion
     ./plugins/cmp.nix
     ./plugins/autopairs.nix
-    ./plugins/supermaven.nix
 
     ./plugins/lsp.nix
     ./plugins/luasnip.nix
     ./plugins/lspkind.nix
+
     # formatting/linting
     ./plugins/none-ls.nix
-    ./plugins/align.nix
     # syntax
     ./plugins/treesitter.nix
     ./plugins/colorizer.nix
     ./plugins/indent-blankline.nix
     ./plugins/misc.nix
-    ./plugins/illuminate.nix
 
     # git
     ./plugins/gitsigns.nix
