@@ -24,6 +24,7 @@
     ./plugins/colorizer.nix
     ./plugins/indent-blankline.nix
     ./plugins/misc.nix
+    ./plugins/illuminate.nix
 
     # git
     ./plugins/gitsigns.nix
@@ -43,7 +44,7 @@
     ./plugins/lualine.nix
     ./plugins/noice.nix
     ./plugins/notify.nix
-    ./plugins/headlines.nix
+    # ./plugins/headlines.nix
 
   ];
 
