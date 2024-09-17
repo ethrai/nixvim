@@ -7,8 +7,8 @@
     ./keymaps.nix
     ./opts.nix
     ./autocmds.nix
-    # ./plugins/kanagawa.nix
-    ./plugins/catppuccin.nix
+    ./plugins/theme.nix
+
     # completion
     ./plugins/cmp.nix
     ./plugins/autopairs.nix
@@ -36,7 +36,6 @@
     ./plugins/oil.nix
 
     ./plugins/auto-session.nix
-    # ./plugins/obsession.nix
 
     ./plugins/obsidian.nix
 
@@ -44,7 +43,9 @@
     ./plugins/lualine.nix
     ./plugins/noice.nix
     ./plugins/notify.nix
-    # ./plugins/headlines.nix
+
+    # mini
+    ./plugins/mini.nix
 
   ];
 
