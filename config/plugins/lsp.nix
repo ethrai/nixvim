@@ -8,12 +8,11 @@
         capabilities.textDocument.completion.completionItem.snippetSupport = true
       '';
       enable = true;
-      inlayHints = true;
+      inlayHints = false;
       servers = {
         html = { enable = true; };
         lua-ls = { enable = true; };
         marksman = { enable = true; };
-        gopls = { enable = true; };
         clangd = { enable = true; };
         cmake = { enable = true; };
         terraformls = { enable = true; };
@@ -98,11 +97,11 @@
             action = "open_float";
             desc = "Line Diagnostics";
           };
-          "[d" = {
+          "<leader>j" = {
             action = "goto_next";
             desc = "Next Diagnostic";
           };
-          "]d" = {
+          "<leader>k" = {
             action = "goto_prev";
             desc = "Previous Diagnostic";
           };
@@ -110,5 +109,10 @@
       };
     };
   };
-
+  keymaps = [{
+    mode = "n";
+    key = "<leader>a";
+    action = "<cmd>lua vim.lsp.buf.code_action() <cr>";
+    options = { desc = "Redraw / Clear hlsearch / Diff Update"; };
+  }];
 }

@@ -3,6 +3,8 @@
   imports = [
     # code
     ./plugins/nix.nix
+    ./plugins/go.nix
+
     # core
     ./keymaps.nix
     ./opts.nix
@@ -11,7 +13,6 @@
 
     # completion
     ./plugins/cmp.nix
-    ./plugins/autopairs.nix
 
     ./plugins/lsp.nix
     ./plugins/luasnip.nix
@@ -41,8 +42,8 @@
 
     # 💅
     ./plugins/lualine.nix
-    ./plugins/noice.nix
-    ./plugins/notify.nix
+    # ./plugins/noice.nix
+    # ./plugins/notify.nix
 
     # mini
     ./plugins/mini.nix

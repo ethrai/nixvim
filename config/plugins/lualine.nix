@@ -8,14 +8,12 @@
       lualine_c = [
         "harpoon2"
         "filename"
-        {
-          name = "diff";
-          # symbols = {
-          #   added = " ";
-          #   modified = " ";
-          #   removed = " ";
-          # };
-        }
+        "diff"
+        # symbols = {
+        #   added = " ";
+        #   modified = " ";
+        #   removed = " ";
+        # };
       ];
 
       lualine_x = [

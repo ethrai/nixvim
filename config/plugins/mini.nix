@@ -1,7 +1,14 @@
 {
   plugins.mini = {
-
+    enable = true;
     modules = {
+      align = {
+        mappings = {
+          start = "ga";
+          start_with_preview = "gA";
+        };
+      };
+      pairs = { };
       surround = {
         mappings = {
           add = "gsa";
@@ -12,13 +19,13 @@
           replace = "gsr";
           update_n_lines = "gsn";
         };
-        comment = {
-          mappings = {
-            comment = "<leader>/";
-            comment_line = "<leader>/";
-            comment_visual = "<leader>/";
-            textobject = "<leader>/";
-          };
+      };
+      comment = {
+        mappings = {
+          comment = "gc";
+          comment_line = "gcc";
+          comment_visual = "gc";
+          textobject = "gc";
         };
       };
     };
