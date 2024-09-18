@@ -23,6 +23,18 @@
           { name = "buffer"; }
         ];
 
+        window = {
+          completion = {
+            border = "single";
+            scrollbar = false;
+          };
+
+          documentation = {
+            border = "single";
+            scrollbar = false;
+          };
+        };
+
         mapping = {
           "<C-Tab>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
           "<C-j>" = "cmp.mapping.select_next_item()";

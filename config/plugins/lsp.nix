@@ -115,4 +115,37 @@
     action = "<cmd>lua vim.lsp.buf.code_action() <cr>";
     options = { desc = "Redraw / Clear hlsearch / Diff Update"; };
   }];
+
+  extraConfigLua = ''
+    local border = {
+        { '┌', 'FloatBorder' },
+        { '─', 'FloatBorder' },
+        { '┐', 'FloatBorder' },
+        { '│', 'FloatBorder' },
+        { '┘', 'FloatBorder' },
+        { '─', 'FloatBorder' },
+        { '└', 'FloatBorder' },
+        { '│', 'FloatBorder' },
+    }
+
+    vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(
+      vim.lsp.handlers.hover, {
+        border = border
+      }
+    )
+
+    vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(
+      vim.lsp.handlers.signature_help, {
+        border = border
+      }
+    )
+
+    vim.diagnostic.config{
+      float={border=border}
+    };
+
+    require('lspconfig.ui.windows').default_options = {
+      border = border
+    }
+  '';
 }
