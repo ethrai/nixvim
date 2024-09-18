@@ -4,7 +4,6 @@
     # code
     ./plugins/nix.nix
     ./plugins/go.nix
-    ./plugins/java.nix
 
     # core
     ./keymaps.nix
