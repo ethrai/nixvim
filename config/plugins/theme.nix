@@ -1,7 +1,7 @@
 {
   colorschemes.base16 = {
     enable = true;
-    colorscheme = "default-dark";
+    colorscheme = "default-light";
     # Whether to set your status bar theme to ‘base16’. 
     setUpBar = true; # default true
     settings = {
