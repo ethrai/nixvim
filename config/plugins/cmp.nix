@@ -34,12 +34,12 @@
 
         window = {
           completion = {
-            border = "single";
+            border = "rounded";
             scrollbar = false;
           };
 
           documentation = {
-            border = "single";
+            border = "rounded";
             scrollbar = false;
           };
         };

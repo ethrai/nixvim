@@ -24,6 +24,7 @@
     ./plugins/treesitter.nix
     ./plugins/colorizer.nix
     ./plugins/misc.nix
+    ./plugins/illuminate.nix
 
     # git
     ./plugins/gitsigns.nix
@@ -32,7 +33,7 @@
     # navigation
     ./plugins/harpoon.nix
     ./plugins/telescope.nix
-    # ./plugins/yazi.nix
+    ./plugins/neotree.nix
 
     ./plugins/auto-session.nix
 

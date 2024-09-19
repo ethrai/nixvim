@@ -1,20 +1,20 @@
 {
   plugins.telescope = {
     enable = true;
-    extensions = {
-      file-browser = {
-        enable = true;
-        settings = {
-          hidden = {
-            file_browser = true;
-            folder_browser = false;
-          };
-          hijack_netrw = true;
-          use_fd = true;
-        };
-      };
-      fzf-native = { enable = true; };
-    };
+    # extensions = {
+    #   file-browser = {
+    #     enable = true;
+    #     settings = {
+    #       hidden = {
+    #         file_browser = true;
+    #         folder_browser = false;
+    #       };
+    #       hijack_netrw = true;
+    #       use_fd = true;
+    #     };
+    #   };
+    #   fzf-native = { enable = true; };
+    # };
     settings = {
       selection_caret = "> ";
       defaults = {
@@ -40,7 +40,6 @@
     };
     keymaps = {
       "<leader><space>" = { action = "find_files"; };
-      "<leader>n" = { action = "file_browser"; };
       "<leader>/" = {
         action = "live_grep";
         options = { desc = "Grep (root dir)"; };
