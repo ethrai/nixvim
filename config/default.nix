@@ -39,6 +39,7 @@
 
     # 💅
     ./plugins/lualine.nix
+    ./plugins/web-devicons.nix
 
     # mini
     ./plugins/mini.nix

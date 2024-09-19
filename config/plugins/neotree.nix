@@ -11,7 +11,7 @@
     closeIfLastWindow = true;
     popupBorderStyle = "rounded";
     window = {
-      width = 30;
+      width = 20;
       autoExpandWidth = true;
     };
   };
