@@ -1,5 +1,13 @@
 {
   plugins = {
+    cmp-nvim-lsp.enable = true; # lsp
+    cmp-nvim-lua.enable = true;
+    cmp-buffer.enable = true;
+    cmp-async-path.enable = true;
+    cmp-cmdline.enable = true;
+    cmp_luasnip.enable = true; # snippets
+
+    cmp-nvim-lsp-signature-help.enable = true;
     cmp = {
       enable = true;
       settings = {
@@ -20,6 +28,7 @@
           }
           { name = "luasnip"; }
           { name = "git"; }
+          { name = "nvim_lsp_signature_help"; }
           { name = "buffer"; }
         ];
 
@@ -71,15 +80,6 @@
         };
       };
     };
-
-    cmp-nvim-lsp.enable = true; # lsp
-    cmp-nvim-lua.enable = true;
-    cmp-buffer.enable = true;
-    cmp-async-path.enable = true;
-    cmp-cmdline.enable = true;
-    cmp_luasnip.enable = true; # snippets
-
-    cmp-nvim-lsp-signature-help.enable = true;
 
     luasnip = { enable = true; };
   };
