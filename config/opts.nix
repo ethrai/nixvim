@@ -2,8 +2,8 @@
   config = {
     performance.byteCompileLua.enable = true;
     diagnostics = {
-      virtual_lines = true;
-      virtual_text = false;
+      virtual_lines = false;
+      virtual_text = true;
       underline = true;
       signs = true;
       severity_sort = true;
@@ -65,8 +65,6 @@
       scrolloff = 3; # Number of screen lines to show around the cursor
       cursorline = false; # Highlight the screen line of the cursor
       cursorcolumn = false; # Highlight the screen column of the cursor
-      signcolums = "no";
-      colorcolumn = "80"; # Columns to highlight
       laststatus = 3; # When to use a status line for the last window
       fileencoding = "utf-8"; # File-content encoding for the current buffer
       linebreak = true;

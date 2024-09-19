@@ -19,7 +19,7 @@
           fetchingTimeout = 200;
           maxViewEntries = 30;
         };
-        formatting = { fields = [ "kind" "abbr" "menu" ]; };
+        formatting = { fields = [ "kind" "abbr" ]; };
         sources = [
           { name = "async_path"; }
           {
@@ -35,11 +35,13 @@
         window = {
           completion = {
             border = "rounded";
+            winhighlight = "Normal:CmpDocumentation,CmpItemAbbr:CmpItemMenu";
             scrollbar = false;
           };
 
           documentation = {
             border = "rounded";
+            winhighlight = "Normal:CmpDocumentation,CmpItemAbbr:CmpItemMenu";
             scrollbar = false;
           };
         };

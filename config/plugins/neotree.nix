@@ -2,7 +2,7 @@
   keymaps = [{
     mode = "n";
     key = "<leader>n";
-    action = ":Neotree action=focus reveal toggle<CR>";
+    action = ":Neotree last<cr>";
     options.silent = true;
   }];
   plugins.neo-tree = {
@@ -11,8 +11,9 @@
     closeIfLastWindow = true;
     popupBorderStyle = "rounded";
     window = {
-      width = 20;
-      autoExpandWidth = true;
+      position = "float";
+      width = 50;
+      height = 0.95;
     };
   };
 }

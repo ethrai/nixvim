@@ -25,6 +25,7 @@
     ./plugins/colorizer.nix
     ./plugins/misc.nix
     ./plugins/illuminate.nix
+    ./plugins/rainbow-delimiters.nix
 
     # git
     ./plugins/gitsigns.nix

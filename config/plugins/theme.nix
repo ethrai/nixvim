@@ -1,9 +1,30 @@
 {
+  highlightOverride = {
+    # pornhub colors
+    Search = {
+      fg = "#282828";
+      bg = "#ffb77b";
+    };
+    # pornhub colors
+    CurSearch = {
+      fg = "#181818";
+      bg = "#f2884e";
+    };
+    # pornhub colors
+    IncSearch = {
+      fg = "#181818";
+      bg = "#f2884e";
+    };
+    # pornhub colors
+    Substitute = {
+      fg = "#282828";
+      bg = "#ffb77b";
+    };
+  };
   colorschemes.base16 = {
     enable = true;
     # colorscheme = "default-light";
     colorscheme = {
-
       base00 = "#f8f8f8"; # #f8f8f8
       base01 = "#e6e6e6"; # #e6e6e6
       base02 = "#d8d8d8"; # #d8d8d8
