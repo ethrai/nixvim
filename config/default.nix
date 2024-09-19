@@ -23,9 +23,7 @@
     # syntax
     ./plugins/treesitter.nix
     ./plugins/colorizer.nix
-    ./plugins/indent-blankline.nix
     ./plugins/misc.nix
-    ./plugins/illuminate.nix
 
     # git
     ./plugins/gitsigns.nix
@@ -34,16 +32,12 @@
     # navigation
     ./plugins/harpoon.nix
     ./plugins/telescope.nix
-    ./plugins/oil.nix
+    # ./plugins/yazi.nix
 
     ./plugins/auto-session.nix
 
-    ./plugins/obsidian.nix
-
     # 💅
     ./plugins/lualine.nix
-    # ./plugins/noice.nix
-    # ./plugins/notify.nix
 
     # mini
     ./plugins/mini.nix

@@ -16,6 +16,7 @@
       fzf-native = { enable = true; };
     };
     settings = {
+      selection_caret = "> ";
       defaults = {
         file_ignore_patterns = [
           "^.git/"
@@ -26,12 +27,13 @@
           "%.ipynb"
           "^secrets/"
         ];
+        layout_strategy = "vertical";
         layout_config = {
           horizontal = {
             prompt_position = "top";
-            width = 0.98;
+            width = 0.95;
           };
-          preview_width = 0.55;
+          vertical = { prompt_position = "bottom"; };
         };
         sorting_strategy = "ascending";
       };

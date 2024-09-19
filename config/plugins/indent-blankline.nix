@@ -1,6 +1,6 @@
 {
   plugins.indent-blankline = {
-    enable = false;
+    enable = true;
     settings = {
       exclude = {
         filetypes = [
