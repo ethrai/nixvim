@@ -52,6 +52,7 @@
       modelines = 100; # Sets the type of modelines
       background = "light";
       undofile = true; # Automatically save and restore undo history
+      signcolumn = "yes";
       incsearch =
         true; # Incremental search: show match for partly typed search command
       inccommand =
