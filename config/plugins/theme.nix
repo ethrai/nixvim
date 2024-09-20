@@ -20,6 +20,7 @@
       fg = "#282828";
       bg = "#ffb77b";
     };
+    MatchParen = { bg = "#d6d6d6"; };
   };
   colorschemes.base16 = {
     enable = true;
