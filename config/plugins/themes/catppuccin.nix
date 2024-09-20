@@ -3,19 +3,14 @@
     catppuccin = {
       enable = true;
       settings = {
-        background = {
-          light = "latte";
-          dark = "frappe";
-        };
-        term_colors = true;
-        no_bold = false;
+        flavour = "frappe";
+        transparent_background = false;
+        term_colors = false;
         no_italic = false;
+        no_bold = false;
         no_underline = false;
         integrations = {
           leap = true;
-          noice = false;
-          notify = false;
-          lsp_saga = false;
           cmp = true;
           gitsigns = true;
           neotree = true;
@@ -25,8 +20,8 @@
           };
           treesitter = true;
           telescope.enabled = true;
-          nvim_surround = true;
           harpoon = true;
+          mini.enabled = true;
           indent_blankline = {
             enabled = true;
             scope_color =
