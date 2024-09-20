@@ -5,11 +5,12 @@
     ./plugins/nix.nix
     ./plugins/go.nix
 
+    ./plugins/themes/ayu.nix
+
     # core
     ./keymaps.nix
     ./opts.nix
     ./autocmds.nix
-    ./plugins/theme.nix
 
     # completion
     ./plugins/cmp.nix
@@ -44,7 +45,6 @@
 
     # mini
     ./plugins/mini.nix
-
   ];
 
 }

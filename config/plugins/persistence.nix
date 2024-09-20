@@ -3,7 +3,6 @@
     enable = true;
     saveEmpty = true;
   };
-
   keymaps = [
     {
       mode = "n";

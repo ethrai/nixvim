@@ -63,7 +63,7 @@
         };
       };
       swap = {
-        enable = true;
+        enable = false;
         swapNext = { "<leader>p" = "@parameters.inner"; };
         swapPrevious = { "<leader>P" = "@parameter.outer"; };
       };
