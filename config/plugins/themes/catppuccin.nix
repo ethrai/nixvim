@@ -5,25 +5,17 @@
       settings = {
         background = {
           light = "latte";
-          dark = "mocha";
+          dark = "frappe";
         };
-        custom_highlights = ''
-          function(colors)
-            return {
-              CmpBorder = { fg = colors.blue },
-            }
-          end
-        '';
-        flavour = "mocha";
         term_colors = true;
         no_bold = false;
         no_italic = false;
         no_underline = false;
         integrations = {
           leap = true;
-          noice = true;
-          notify = true;
-          lsp_saga = true;
+          noice = false;
+          notify = false;
+          lsp_saga = false;
           cmp = true;
           gitsigns = true;
           neotree = true;

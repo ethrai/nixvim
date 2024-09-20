@@ -3,7 +3,7 @@
     performance.byteCompileLua.enable = true;
     diagnostics = {
       virtual_lines = false;
-      virtual_text = true;
+      virtual_text = false;
       underline = true;
       signs = true;
       severity_sort = true;
@@ -50,7 +50,7 @@
       swapfile = false; # Disable the swap file
       modeline = true; # Tags such as 'vim:ft=sh'
       modelines = 100; # Sets the type of modelines
-      background = "light";
+      background = "dark";
       undofile = true; # Automatically save and restore undo history
       signcolumn = "yes";
       incsearch =

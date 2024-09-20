@@ -5,7 +5,7 @@
     ./plugins/nix.nix
     ./plugins/go.nix
 
-    ./plugins/themes/ayu.nix
+    ./plugins/themes/catppuccin.nix
 
     # core
     ./keymaps.nix
