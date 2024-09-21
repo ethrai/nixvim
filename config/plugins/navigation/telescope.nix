@@ -1,20 +1,6 @@
 {
   plugins.telescope = {
     enable = true;
-    # extensions = {
-    #   file-browser = {
-    #     enable = true;
-    #     settings = {
-    #       hidden = {
-    #         file_browser = true;
-    #         folder_browser = false;
-    #       };
-    #       hijack_netrw = true;
-    #       use_fd = true;
-    #     };
-    #   };
-    #   fzf-native = { enable = true; };
-    # };
     settings = {
       selection_caret = "> ";
       defaults = {

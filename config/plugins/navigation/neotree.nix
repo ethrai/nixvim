@@ -1,9 +1,9 @@
 {
   keymaps = [{
-    mode = "n";
+    mode = [ "n" ];
     key = "<leader>n";
-    action = ":Neotree last<cr>";
-    options.silent = true;
+    action = "<cmd>Neotree toggle<cr>";
+    options = { desc = "Open/Close Neotree"; };
   }];
   plugins.neo-tree = {
     enable = true;
@@ -11,9 +11,8 @@
     closeIfLastWindow = true;
     popupBorderStyle = "rounded";
     window = {
-      position = "float";
-      width = 50;
-      height = 0.95;
+      position = "left";
+      width = 30;
     };
   };
 }

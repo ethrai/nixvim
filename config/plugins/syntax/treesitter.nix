@@ -1,25 +1,13 @@
 { pkgs, ... }: {
   extraPlugins = with pkgs.vimPlugins; [ nvim-treesitter-textsubjects ];
   plugins = {
-    treesitter-context = {
-      enable = true;
-      settings = {
-        # ???
-        enable = true;
-        # Whether to show line numbers.
-        line_numbers = true; # true
-        max_lines = 1; # 0 default
-        mode = "cursor";
-      };
-    };
-
     treesitter = {
       enable = true;
       settings = {
         indent.enable = true;
         highlight.enable = true;
       };
-      folding = false;
+      folding = true;
       nixvimInjections = true;
       grammarPackages = pkgs.vimPlugins.nvim-treesitter.allGrammars;
     };

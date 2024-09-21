@@ -2,8 +2,8 @@
   plugins.notify = {
     enable = true;
     fps = 60;
-    render = "minimal";
-    timeout = 3000;
+    render = "default";
+    timeout = 2500;
     topDown = true;
     stages = "static";
   };
@@ -11,7 +11,7 @@
   keymaps = [
     {
       mode = "n";
-      key = "<leader>o";
+      key = "<leader>nd";
       action = ''
         <cmd>lua require("notify").dismiss({ silent = true, pending = true })<cr>
       '';

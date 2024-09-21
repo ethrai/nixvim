@@ -13,25 +13,9 @@
         html = { enable = true; };
         lua-ls = { enable = true; };
         marksman = { enable = true; };
-        clangd = { enable = true; };
         cmake = { enable = true; };
-        terraformls = { enable = true; };
-        tsserver = { enable = true; };
-        ansiblels = { enable = true; };
+        ts-ls = { enable = true; };
         jsonls = { enable = true; };
-        helm-ls = {
-          enable = true;
-          extraOptions = {
-            settings = {
-              "helm-ls" = {
-                yamlls = {
-                  path =
-                    "${pkgs.yaml-language-server}/bin/yaml-language-server";
-                };
-              };
-            };
-          };
-        };
         yamlls = {
           enable = true;
           extraOptions = {
@@ -82,39 +66,16 @@
             action = "type_definition";
             desc = "Type Definition";
           };
-          K = {
-            action = "hover";
-            desc = "Hover";
-          };
-          "<leader>cw" = {
-            action = "workspace_symbol";
-            desc = "Workspace Symbol";
-          };
-          "<F2>" = { action = "rename"; };
         };
         diagnostic = {
           "<leader>cd" = {
             action = "open_float";
             desc = "Line Diagnostics";
           };
-          "<leader>j" = {
-            action = "goto_next";
-            desc = "Next Diagnostic";
-          };
-          "<leader>k" = {
-            action = "goto_prev";
-            desc = "Previous Diagnostic";
-          };
         };
       };
     };
   };
-  keymaps = [{
-    mode = "n";
-    key = "<leader>a";
-    action = "<cmd>lua vim.lsp.buf.code_action() <cr>";
-    options = { desc = "Redraw / Clear hlsearch / Diff Update"; };
-  }];
 
   extraConfigLua = ''
     local border = "rounded"
