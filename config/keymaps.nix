@@ -20,7 +20,6 @@
       mode = [ "n" ];
       key = ";";
       action = ":";
-      options = { silent = true; };
     }
     {
       mode = [ "n" ];
