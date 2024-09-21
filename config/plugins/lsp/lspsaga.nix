@@ -6,7 +6,7 @@
       showServerName = true;
       extendGitSigns = true;
     };
-    ui = { border = "single"; };
+    ui = { border = "rounded"; };
     implement.enable = false;
     lightbulb.enable = false;
     outline = {
@@ -62,12 +62,6 @@
       mode = [ "n" ];
       key = "<F2>";
       action = "<cmd>Lspsaga rename<cr>";
-      options = { silent = true; };
-    }
-    {
-      mode = [ "n" ];
-      key = "<leader>o";
-      action = "<cmd>Lspsaga outline<cr>";
       options = { silent = true; };
     }
   ];

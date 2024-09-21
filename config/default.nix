@@ -30,7 +30,7 @@
     ./plugins/git/lazygit.nix
 
     ./plugins/navigation/telescope.nix
-    ./plugins/navigation/neotree.nix
+    # ./plugins/navigation/neotree.nix
     ./plugins/navigation/oil.nix
     ./plugins/navigation/harpoon.nix
 

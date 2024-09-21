@@ -17,7 +17,7 @@
         sidebars = "dark";
         variables = { };
       };
-      terminal_colors = true;
+      terminal_colors = false;
     };
   };
 }

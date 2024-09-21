@@ -3,7 +3,7 @@
     enable = true;
     settings = {
       floating_window_scaling_factor = 0.9;
-      yazi_floating_window_border = "single";
+      yazi_floating_window_border = "rounded";
       yazi_floating_window_winblend = 50;
       keymaps = {
         copy_relative_path_to_selected_files = "<c-y>";

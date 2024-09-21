@@ -9,7 +9,7 @@
     enable = true;
     autoCleanAfterSessionRestore = true;
     closeIfLastWindow = true;
-    popupBorderStyle = "single";
+    popupBorderStyle = "rounded";
     window = {
       position = "left";
       width = 30;
