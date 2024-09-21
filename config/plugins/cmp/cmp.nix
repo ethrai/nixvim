@@ -34,13 +34,13 @@
 
         window = {
           completion = {
-            border = "rounded";
+            border = "single";
             winhighlight = "Normal:CmpDocumentation,CmpItemAbbr:CmpItemMenu";
             scrollbar = false;
           };
 
           documentation = {
-            border = "rounded";
+            border = "single";
             winhighlight = "Normal:CmpDocumentation,CmpItemAbbr:CmpItemMenu";
             scrollbar = false;
           };

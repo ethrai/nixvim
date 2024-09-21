@@ -25,7 +25,6 @@
     ./plugins/syntax/autopairs.nix
     ./plugins/syntax/colorizer.nix
     ./plugins/syntax/illuminate.nix
-    ./plugins/syntax/indent-blankline.nix
 
     ./plugins/git/gitsigns.nix
     ./plugins/git/lazygit.nix

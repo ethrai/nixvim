@@ -8,7 +8,7 @@
       signs = true;
       severity_sort = true;
       float = {
-        border = "rounded";
+        border = "single";
         source = "always";
         focusable = false;
       };

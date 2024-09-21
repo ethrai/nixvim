@@ -6,6 +6,7 @@
       showServerName = true;
       extendGitSigns = true;
     };
+    ui = { border = "single"; };
     implement.enable = false;
     lightbulb.enable = false;
     outline = {
