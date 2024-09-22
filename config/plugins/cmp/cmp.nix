@@ -7,7 +7,6 @@
     cmp-cmdline.enable = true;
     cmp_luasnip.enable = true; # snippets
 
-    cmp-nvim-lsp-signature-help.enable = true;
     cmp = {
       enable = true;
       settings = {
@@ -28,7 +27,6 @@
           }
           { name = "luasnip"; }
           { name = "git"; }
-          { name = "nvim_lsp_signature_help"; }
           { name = "buffer"; }
         ];
 
