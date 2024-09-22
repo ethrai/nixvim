@@ -58,10 +58,6 @@
             action = "declaration";
             desc = "Goto Declaration";
           };
-          gi = {
-            action = "implementation";
-            desc = "Goto Implementation";
-          };
           gt = {
             action = "type_definition";
             desc = "Type Definition";

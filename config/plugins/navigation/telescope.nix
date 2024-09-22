@@ -49,6 +49,11 @@
         action = "lsp_references";
         options = { desc = "Command History"; };
       };
+
+      "gi" = {
+        action = "lsp_implementations";
+        options = { desc = "Command History"; };
+      };
       "<leader>b" = {
         action = "buffers";
         options = { desc = "+buffer"; };
