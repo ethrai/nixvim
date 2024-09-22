@@ -8,6 +8,7 @@
 
     ./plugins/langs/go.nix
     ./plugins/langs/nix.nix
+    ./plugins/langs/java.nix
 
     ./plugins/themes/tokyonight.nix
 
