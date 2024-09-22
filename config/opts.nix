@@ -76,10 +76,12 @@
       # Tab options
       expandtab =
         true; # Expand <Tab> to spaces in Insert mode (local to buffer)
-      # cindent = true; # Enable C-style indentation
+      cindent = true; # Enable C-style indentation
       smarttab = true; # Insert appropriate number of spaces on tab
-      smartindent = true; # Smart autoindenting on new lines
+      smartindent = false; # Smart autoindenting on new lines. Disabled cause
+      # tresitter-indent is used
       shiftwidth = 2; # Number of spaces to use for each step of (auto)indent
+
       tabstop = 2; # Number of spaces that a <Tab> in the file counts for
 
       textwidth =
@@ -88,7 +90,11 @@
 
       # Folding
       foldenable = true;
-      foldmethod = "indent";
+      foldmethod = "expr";
+      foldnestmax = 3;
+      foldexpr = "nvim_treesitter#foldexpr()";
+      fillchars = "fold:\\";
+      foldminlines = 1;
       foldlevel =
         99; # Folds with a level higher than this number will be closed
     };
