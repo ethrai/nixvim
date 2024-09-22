@@ -13,12 +13,15 @@
           "%.ipynb"
           "^secrets/"
         ];
-        layout_strategy = "vertical";
+        layout_strategy = "horizontal";
         layout_config = {
           horizontal = {
-            prompt_position = "top";
-            width = 0.95;
+            prompt_position = "bottom";
+            preview_width = 0.55;
           };
+          width = 0.95;
+          height = 0.9;
+          preview_cutoff = 120;
           vertical = { prompt_position = "bottom"; };
         };
         sorting_strategy = "ascending";
