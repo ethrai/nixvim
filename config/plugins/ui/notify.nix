@@ -6,6 +6,8 @@
     timeout = 2500;
     topDown = true;
     stages = "static";
+    maxWidth = 60;
+    minimumWidth = 30;
   };
 
   keymaps = [
