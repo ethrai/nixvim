@@ -4,7 +4,8 @@
   plugins.nvim-jdtls = {
     enable = true;
     configuration = "/home/sergio/.cache/jdtls/config";
-    data = "./idea/jdtls";
+    data.__raw =
+      "vim.fn.stdpath 'cache' .. '/jdtls/' .. vim.fn.fnamemodify(vim.fn.getcwd(), ':t')";
     settings = {
       eclipse = { downloadSources = true; };
 
