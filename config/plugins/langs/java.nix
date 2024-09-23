@@ -1,8 +1,8 @@
 { pkgs, ... }: {
   # plugins.lsp.servers.jdt-language-server.enable = true;
-  # TODO: HARDCODED PATH!!! PERFORM SEPPUKU RIGHT NOW
   plugins.nvim-jdtls = {
     enable = true;
+    # TODO: HARDCODED PATH!!! PERFORM SEPPUKU RIGHT NOW
     configuration = "/home/sergio/.cache/jdtls/config";
     data.__raw =
       "vim.fn.stdpath 'cache' .. '/jdtls/' .. vim.fn.fnamemodify(vim.fn.getcwd(), ':t')";

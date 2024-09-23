@@ -78,6 +78,11 @@
         action = "git_status";
         options = { desc = "Status"; };
       };
+
+      "<leader>gb" = {
+        action = "git_branches";
+        options = { desc = "Branches"; };
+      };
       "<leader>sa" = {
         action = "autocommands";
         options = { desc = "Auto Commands"; };
