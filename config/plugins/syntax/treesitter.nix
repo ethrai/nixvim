@@ -5,6 +5,7 @@
       settings = {
         indent.enable = false;
         highlight.enable = true;
+        incremental_selection = { enable = true; };
       };
       folding = true;
       nixvimInjections = true;
@@ -28,6 +29,8 @@
           "il" = "@loop.inner";
           "al" = "@loop.outer";
           "at" = "@comment.outer";
+          "ib" = "@block.inner";
+          "ab" = "@block.outer";
         };
       };
       move = {
@@ -51,8 +54,8 @@
       };
       swap = {
         enable = true;
-        swapNext = { "<leader>p" = "@parameters.inner"; };
-        swapPrevious = { "<leader>P" = "@parameter.outer"; };
+        swapNext = { "<leader>a" = "@parameters.inner"; };
+        swapPrevious = { "<leader>A" = "@parameter.outer"; };
       };
     };
   };

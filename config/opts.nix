@@ -2,8 +2,8 @@
   config = {
     performance.byteCompileLua.enable = true;
     diagnostics = {
-      virtual_lines = false;
       virtual_text = false;
+      virtual_lines = false;
       underline = true;
       signs = true;
       severity_sort = true;

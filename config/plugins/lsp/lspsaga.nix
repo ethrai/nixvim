@@ -30,7 +30,7 @@
     }
     {
       mode = [ "n" ];
-      key = "<leader>a";
+      key = "<leader>q";
       action = "<cmd>Lspsaga code_action<CR>";
       options = { silent = true; };
     }
