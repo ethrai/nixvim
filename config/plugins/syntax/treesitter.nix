@@ -1,5 +1,4 @@
 { pkgs, ... }: {
-  extraPlugins = with pkgs.vimPlugins; [ nvim-treesitter-textsubjects ];
   plugins = {
     treesitter = {
       enable = true;
@@ -51,7 +50,7 @@
         };
       };
       swap = {
-        enable = false;
+        enable = true;
         swapNext = { "<leader>p" = "@parameters.inner"; };
         swapPrevious = { "<leader>P" = "@parameter.outer"; };
       };

@@ -10,7 +10,7 @@
       eclipse = { downloadSources = true; };
 
       format = {
-        enabled = true;
+        enabled = false;
         settings = {
           url = "${(pkgs.fetchurl {
             url =
