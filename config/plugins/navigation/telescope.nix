@@ -17,11 +17,11 @@
         layout_config = {
           horizontal = {
             prompt_position = "bottom";
-            preview_width = 0.55;
+            preview_width = 0.35;
           };
           width = 0.95;
           height = 0.9;
-          preview_cutoff = 120;
+          preview_cutoff = 140;
           vertical = { prompt_position = "bottom"; };
         };
         sorting_strategy = "ascending";
