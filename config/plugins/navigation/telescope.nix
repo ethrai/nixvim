@@ -21,7 +21,7 @@
           };
           width = 0.95;
           height = 0.9;
-          preview_cutoff = 140;
+          preview_cutoff = 100;
           vertical = { prompt_position = "bottom"; };
         };
         sorting_strategy = "ascending";
@@ -105,4 +105,10 @@
       };
     };
   };
+  keymaps = [{
+    mode = "i";
+    key = "<C-y>";
+    action =
+      ''<cmd>lua require("telescope.action.layout").toggle_preview <cr>'';
+  }];
 }
