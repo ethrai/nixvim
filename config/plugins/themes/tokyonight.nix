@@ -8,7 +8,7 @@
       lualine_bold = true;
       on_colors = "function(colors) end";
       style = "night";
-      transparent = false;
+      transparent = true;
       styles = {
         comments = { italic = true; };
         floats = "dark";
