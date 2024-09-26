@@ -1,19 +1,17 @@
 { pkgs, lib, ... }: {
-
-  # extraFiles = {
-  #   "ftplugin/java.lua".text = ''
-  #     local config = {
-  #       cmd = {'${pkgs.jdt-language-server}/bin/jdtls',
-  #       '--jvm-arg=-javaagent:${pkgs.lombok}/share/java/lombok.jar',
-  #       '--jvm-arg=-Xbootclasspath/a:${pkgs.lombok}/share/java/lombok.jar',
-  #       '--jvm-arg=-data=/home/sergio/.cache/jdtls/workspace',
-  #       '--jvm-arg=-configuration=/home/sergio/.cache/jdtls/config',
-  #     },
-  #       root_dir = vim.fs.dirname(vim.fs.find({'gradlew', '.git', 'mvnw'}, { upward = true })[1]),
-  #     }
-  #     require('jdtls').start_or_attach(config)
-  #   '';
-  # };
+  plugins.none-ls.sources.diagnostics.checkstyle = {
+    enable = true;
+    settings = {
+      extra_args = [
+        "-c"
+        "${(pkgs.fetchurl {
+          url =
+            "https://raw.githubusercontent.com/checkstyle/checkstyle/refs/heads/master/src/main/resources/google_checks.xml";
+          sha256 = "sha256-Xrk2dnRrvi4ZKDOfzCKEZToo/1F6b9Sk8uhOjWp9Y9Y=";
+        })}"
+      ];
+    };
+  };
   extraConfigLuaPre = let
     java-debug =
       "${pkgs.vscode-extensions.vscjava.vscode-java-debug}/share/vscode/extensions/vscjava.vscode-java-debug/server";
