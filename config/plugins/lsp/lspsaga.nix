@@ -1,7 +1,6 @@
 { pkgs, ... }: {
   plugins.lspsaga = {
     enable = true;
-    iconsPackage = pkgs.vimPlugins.nvim-web-devicons;
     codeAction = {
       showServerName = true;
       extendGitSigns = true;
