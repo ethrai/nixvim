@@ -12,6 +12,8 @@
           "^data/"
           "%.ipynb"
           "^secrets/"
+          "build/"
+          "bin/"
         ];
         layout_strategy = "horizontal";
         layout_config = {
