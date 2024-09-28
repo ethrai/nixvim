@@ -1,7 +1,5 @@
 { pkgs, ... }: {
   plugins = {
-    lsp-lines = { enable = true; };
-    lsp-format = { enable = true; };
     helm = { enable = true; };
     lsp = {
       capabilities = ''
@@ -10,7 +8,6 @@
       enable = true;
       inlayHints = false;
       servers = {
-        html = { enable = true; };
         lua-ls = { enable = true; };
         marksman = { enable = true; };
         cmake = { enable = true; };

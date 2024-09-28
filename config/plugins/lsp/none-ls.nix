@@ -1,9 +1,5 @@
 {
-  plugins.lsp-format.enable = true;
   plugins.none-ls = {
-    settings = {
-
-    };
     enable = true;
     sources = {
       code_actions = {
