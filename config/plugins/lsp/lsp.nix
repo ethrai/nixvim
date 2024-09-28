@@ -14,7 +14,6 @@
         lua-ls = { enable = true; };
         marksman = { enable = true; };
         cmake = { enable = true; };
-        ts-ls = { enable = true; };
         jsonls = { enable = true; };
         yamlls = {
           enable = true;

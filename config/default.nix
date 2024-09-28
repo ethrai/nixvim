@@ -1,14 +1,8 @@
 {
-  # Import all your configuration modules here
   imports = [
-    # core
     ./keymaps.nix
     ./opts.nix
     ./autocmds.nix
-
-    ./plugins/langs/go.nix
-    ./plugins/langs/nix.nix
-    ./plugins/langs/java.nix
 
     ./plugins/themes/tokyonight.nix
 
@@ -31,7 +25,6 @@
     ./plugins/git/lazygit.nix
 
     ./plugins/navigation/telescope.nix
-    # ./plugins/navigation/neotree.nix
     ./plugins/navigation/oil.nix
     ./plugins/navigation/harpoon.nix
 
@@ -41,6 +34,11 @@
     ./plugins/ui/notify.nix
     ./plugins/ui/lualine.nix
     ./plugins/ui/web-devicons.nix
+
+    ./plugins/langs/go.nix
+    ./plugins/langs/nix.nix
+    ./plugins/langs/java.nix
+    ./plugins/langs/web.nix
 
   ];
 
