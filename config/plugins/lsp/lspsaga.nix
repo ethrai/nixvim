@@ -8,10 +8,6 @@
     ui = { border = "rounded"; };
     implement.enable = false;
     lightbulb.enable = false;
-    outline = {
-      autoPreview = true;
-      autoClose = true;
-    };
     rename = { autoSave = true; };
     symbolInWinbar = {
       enable = true;

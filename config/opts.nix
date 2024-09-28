@@ -76,10 +76,8 @@
       # Tab options
       expandtab =
         true; # Expand <Tab> to spaces in Insert mode (local to buffer)
-      cindent = true; # Enable C-style indentation
       smarttab = true; # Insert appropriate number of spaces on tab
-      smartindent = true; # Smart autoindenting on new lines. Disabled cause
-      # tresitter-indent is used
+      smartindent = true; # Smart autoindenting on new lines.
       shiftwidth = 2; # Number of spaces to use for each step of (auto)indent
 
       tabstop = 2; # Number of spaces that a <Tab> in the file counts for
