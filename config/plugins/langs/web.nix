@@ -2,7 +2,37 @@
   plugins = {
     ts-autotag.enable = true;
     lsp.servers = {
-      ts-ls.enable = true;
+      ts-ls = {
+        enable = false;
+        filetypes =
+          [ "javascript" "javascriptreact" "typescript" "typescriptreact" ];
+        extraOptions = {
+          settings = {
+            javascript = {
+              inlayHints = {
+                includeInlayEnumMemberValueHints = true;
+                includeInlayFunctionLikeReturnTypeHints = true;
+                includeInlayFunctionParameterTypeHints = true;
+                includeInlayParameterNameHints = "all";
+                includeInlayParameterNameHintsWhenArgumentMatchesName = true;
+                includeInlayPropertyDeclarationTypeHints = true;
+                includeInlayVariableTypeHints = true;
+              };
+            };
+            typescript = {
+              inlayHints = {
+                includeInlayEnumMemberValueHints = true;
+                includeInlayFunctionLikeReturnTypeHints = true;
+                includeInlayFunctionParameterTypeHints = true;
+                includeInlayParameterNameHints = "all";
+                includeInlayParameterNameHintsWhenArgumentMatchesName = true;
+                includeInlayPropertyDeclarationTypeHints = true;
+                includeInlayVariableTypeHints = true;
+              };
+            };
+          };
+        };
+      };
       tailwindcss.enable = true;
       jsonls.enable = true;
       html.enable = true;
