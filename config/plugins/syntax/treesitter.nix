@@ -3,11 +3,9 @@
     treesitter = {
       enable = true;
       settings = {
-        indent.enable = false;
         highlight.enable = true;
         incremental_selection = { enable = true; };
       };
-      folding = true;
       nixvimInjections = true;
       grammarPackages = pkgs.vimPlugins.nvim-treesitter.allGrammars;
     };
@@ -34,7 +32,7 @@
         };
       };
       move = {
-        enable = true;
+        enable = false;
         gotoNextStart = {
           "]m" = "@function.outer";
           "]]" = "@class.outer";

@@ -18,8 +18,7 @@
     ./plugins/syntax/surround.nix
     ./plugins/syntax/leap.nix
     ./plugins/syntax/autopairs.nix
-    ./plugins/syntax/colorizer.nix
-    ./plugins/syntax/illuminate.nix
+    ./plugins/syntax/ts-comments.nix
 
     ./plugins/git/gitsigns.nix
     ./plugins/git/lazygit.nix
