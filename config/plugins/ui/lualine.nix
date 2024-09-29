@@ -1,27 +1,30 @@
 { pkgs, ... }: {
   plugins.lualine = {
     enable = true;
-    settings.globalstatus = true;
-    settings.sections = {
-      lualine_a = [ "mode" ];
-      lualine_b = [ "branch" ];
-      lualine_c = [
-        "harpoon2"
-        "filename"
-        "diff"
-        # symbols = {
-        #   added = " ";
-        #   modified = " ";
-        #   removed = " ";
-        # };
-      ];
+    settings = {
+      globalstatus = true;
+      theme = "tokyonight";
+      sections = {
+        lualine_a = [ "mode" ];
+        lualine_b = [ "branch" ];
+        lualine_c = [
+          "harpoon2"
+          "filename"
+          "diff"
+          # symbols = {
+          #   added = " ";
+          #   modified = " ";
+          #   removed = " ";
+          # };
+        ];
 
-      lualine_x = [
-        "diagnostics"
+        lualine_x = [
+          "diagnostics"
 
-        "encoding"
-        "filetype"
-      ];
+          "encoding"
+          "filetype"
+        ];
+      };
     };
   };
 

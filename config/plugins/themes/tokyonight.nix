@@ -2,7 +2,7 @@
   colorschemes.tokyonight = {
     enable = true;
     settings = {
-      dim_inactive = true;
+      dim_inactive = false;
       hide_inactive_statusline = false;
       style = "night";
       transparent = false;
@@ -15,6 +15,16 @@
         variables = { };
       };
       terminal_colors = false;
+      plugins = {
+        telescope = true;
+        nvim-cmp = true;
+        nvim-dap = true;
+        gitsigns = true;
+        leap = true;
+        lspsaga = true;
+        noice = true;
+        notify = true;
+      };
     };
   };
 }

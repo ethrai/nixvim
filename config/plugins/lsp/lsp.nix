@@ -16,6 +16,7 @@
       keymaps = {
         silent = true;
         lspBuf = {
+          "K" = "hover";
           gd = {
             action = "definition";
             desc = "Goto Definition";

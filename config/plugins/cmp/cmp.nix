@@ -1,10 +1,5 @@
 {
   plugins = {
-    cmp-nvim-lsp.enable = true; # lsp
-    cmp-buffer.enable = true;
-    cmp-async-path.enable = true;
-    cmp_luasnip.enable = true; # snippets
-
     cmp = {
       enable = true;
       settings = {

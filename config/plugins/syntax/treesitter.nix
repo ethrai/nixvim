@@ -2,8 +2,20 @@
   plugins = {
     treesitter = {
       enable = true;
+      folding = true;
       settings = {
-        highlight.enable = true;
+        highlight = {
+          enable = true;
+          disable = ''
+            function(lang, bufnr)
+              return vim.api.nvim_buf_line_count(bufnr) > 10000
+            end
+          '';
+        };
+        indent = {
+          enable = true;
+          disable = [ "go" ];
+        };
         incremental_selection = { enable = true; };
       };
       nixvimInjections = true;
@@ -31,26 +43,6 @@
           "ab" = "@block.outer";
         };
       };
-      move = {
-        enable = false;
-        gotoNextStart = {
-          "]m" = "@function.outer";
-          "]]" = "@class.outer";
-        };
-        gotoNextEnd = {
-          "]M" = "@function.outer";
-          "][" = "@class.outer";
-        };
-        gotoPreviousStart = {
-          "[m" = "@function.outer";
-          "[[" = "@class.outer";
-        };
-        gotoPreviousEnd = {
-          "[M" = "@function.outer";
-          "[]" = "@class.outer";
-        };
-      };
-      swap = { enable = false; };
     };
   };
 

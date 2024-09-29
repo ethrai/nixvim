@@ -28,14 +28,12 @@
     '';
 
     clipboard = {
-      # Use system clipboard
       register = "unnamedplus";
-
       providers.wl-copy.enable = true;
     };
 
     opts = {
-      updatetime = 100; # Faster completion
+      updatetime = 50; # Faster completion
 
       # Line numbers
       relativenumber = true; # Relative line numbers
@@ -64,7 +62,7 @@
         true; # Override the 'ignorecase' option if the search pattern contains upper
       #   case characters
       scrolloff = 3; # Number of screen lines to show around the cursor
-      cursorline = false; # Highlight the screen line of the cursor
+      cursorline = true; # Highlight the screen line of the cursor
       cursorcolumn = false; # Highlight the screen column of the cursor
       laststatus = 3; # When to use a status line for the last window
       fileencoding = "utf-8"; # File-content encoding for the current buffer

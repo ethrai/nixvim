@@ -32,7 +32,6 @@
     ./plugins/ui/noice.nix
     ./plugins/ui/notify.nix
     ./plugins/ui/lualine.nix
-    ./plugins/ui/web-devicons.nix
 
     ./plugins/langs/go.nix
     ./plugins/langs/nix.nix
