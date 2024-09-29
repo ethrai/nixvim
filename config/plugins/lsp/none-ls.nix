@@ -18,7 +18,6 @@
         golines.enable = true;
         nixfmt.enable = true;
         shfmt.enable = true;
-        asmfmt.enable = true;
         google_java_format.enable = true;
       };
     };
